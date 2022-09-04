@@ -1,11 +1,8 @@
-# fresh project
+# Forcem Ipsum
+## the Star Wars text generator
 
-### Usage
+### API
+Use [forcemipsum.com](https://forcemipsum.com)
 
-Start the project:
-
-```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
+### Contributers
+Episodes 1 and 7 by [drewbiewan](https://github.com/drewbiewan)
