@@ -1,8 +1,13 @@
-# Forcem Ipsum
-## the Star Wars text generator
+# forcemipsum.com
 
-### API
-Use [forcemipsum.com](https://forcemipsum.com)
+Built with Deno Fresh.
 
-### Contributers
-Episodes 1 and 7 by [drewbiewan](https://github.com/drewbiewan)
+### Usage
+
+Start the project:
+
+```
+deno task start
+```
+
+This will watch the project directory and restart as necessary.
