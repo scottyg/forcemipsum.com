@@ -27,16 +27,16 @@ export default function Footer() {
 
   return (
     <div>
-      <footer class={tw`w-full flex mb-16 justify-between`}>
-        <div class={tw`font-normal flex-grow`}>
+      <footer class={tw`w-full flex mb-16 justify-between flex-col md:flex-row`}>
+        <div class={tw`font-normal flex-grow text-left`}>
           <a
             href="https://github.com/scottyg/"
-            class={tw`text-gray-700 underline hover:text-yellow-400`}
+            class={tw`text-gray-700  underline hover:text-yellow-400`}
           >
             Created by Scott Gordon
           </a>
         </div>
-        <div class={tw`font-normal text-gray-700`}>
+        <div class={tw`font-normal text-left text-gray-700`}>
           Forcem Ipsum © {year}
         </div>
       </footer>

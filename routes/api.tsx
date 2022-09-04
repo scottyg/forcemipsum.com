@@ -46,14 +46,14 @@ export default function Api() {
           content="https://forcemipsum.com/forcemipsum-favicon.png"
         />
       </Head>
-      <div class={tw`w-screen min-h-screen bg-gray-100`}>
+      <div class={tw`w-screen min-h-screen bg-gray-100 overflow-x-hidden`}>
         <div class={tw`p-4 mx-auto container`}>
           <div class={tw`flex justify-between mb-2`}>
             <h1 class={tw`text-gray-700 dark:text-white text-xl font-bold`}>
               <a href="/">
                 Forcem Ipsum
                 <span
-                  class={tw`block md:inline-block text-base text-yellow-400 dark:text-yellow-400 font-normal ml-0 md:ml-2`}
+                  class={tw`block md:inline-block overflow-x-scroll text-base text-yellow-400 dark:text-yellow-400 font-normal ml-0 md:ml-2`}
                 >
                   the Star Wars text generator
                 </span>
@@ -76,14 +76,14 @@ export default function Api() {
             <p class={tw`mb-2 text-gray-700`}>1, 4, 5, 6, 7</p>
             <p class={tw`mb-5`}>
               <span
-                class={tw`bg-gray-300 rounded w-auto p-2 text-sm font-mono text-gray-700`}
+                class={tw`bg-gray-300 rounded block md:inline-block overflow-x-scroll w-auto p-2 text-sm font-mono text-gray-700`}
               >
                 https://forcemipsum.com/api/episode-4/5/
               </span>
             </p>
             <p class={tw`mb-5 text-gray-700`}>
               <span
-                class={tw`bg-gray-300 rounded w-auto p-2 text-sm font-mono text-gray-700`}
+                class={tw`bg-gray-300 rounded block md:inline-block overflow-x-scroll w-auto p-2 text-sm font-mono text-gray-700`}
               >
                 https://forcemipsum.com/api/4/10/
               </span>
@@ -91,7 +91,7 @@ export default function Api() {
             <h3 class={tw`text-sm mb-2 font-bold text-gray-700`}>Characters</h3>
             <p class={tw`mb-5 text-gray-700`}>
               <span
-                class={tw`bg-gray-300 rounded w-auto p-2 text-sm font-mono text-gray-700`}
+                class={tw`bg-gray-300 rounded block md:inline-block overflow-x-scroll w-auto p-2 text-sm font-mono text-gray-700`}
               >
                 https://forcemipsum.com/api/characters/5/
               </span>
@@ -100,7 +100,7 @@ export default function Api() {
             <h3 class={tw`text-sm mb-2 font-bold text-gray-700`}>Places</h3>
             <p class={tw`mb-5 text-gray-700`}>
               <span
-                class={tw`bg-gray-300 rounded w-auto p-2 text-sm font-mono text-gray-700`}
+                class={tw`bg-gray-300 rounded block md:inline-block overflow-x-scroll w-auto p-2 text-sm font-mono text-gray-700`}
               >
                 https://forcemipsum.com/api/places/5/
               </span>
@@ -109,7 +109,7 @@ export default function Api() {
             <h2 class={`text-xl mb-2 font-bold text-gray-700`}>Javascript / Typescript</h2>
             <p class={tw`mb-5 text-gray-700`}>
               <span
-                class={tw`bg-gray-300 rounded block w-auto p-2 inline block text-sm font-mono text-gray-700`}
+                class={tw`bg-gray-300 rounded w-auto p-2 block md:inline-block overflow-x-scroll text-sm font-mono text-gray-700`}
               >
                 forcem(content: string, count: number);
               </span>
@@ -150,7 +150,7 @@ export default function Api() {
             </p>
             <p class={tw`mb-5 text-gray-700`}>
               <span
-                class={tw`bg-gray-300 rounded w-auto p-2 text-sm font-mono text-gray-700`}
+                class={tw`bg-gray-300 rounded block md:inline-block overflow-x-scroll w-auto p-2 text-sm font-mono text-gray-700`}
               >
                 npm i forcem-ipsum
               </span>

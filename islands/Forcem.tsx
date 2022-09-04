@@ -42,44 +42,47 @@ export default function Forcem(props: ForcemProps) {
           </span>
         </h1>
 
-        <div class={tw`flex`}>
+        <div class={tw`flex flex-col md:flex-row`}>
           <a
             href="/api"
             class={tw`px-2 mr-2 text(base gray-700 hover:yellow-400) underline h-8 rounded cursor-pointer focus:outline-none focus:ring-0 flex items-center`}
           >
             Try the new API!
           </a>
-          <select
-            onChange={() => setContent(event.target.value)}
-            class={tw` px-2 mr-2 text(base gray-700 hover:gray-800) hover:border-yellow-400 border-1 border-gray-200 h-8 rounded cursor-pointer focus:outline-none focus:ring-0 bg-gray-100`}
-          >
-            <option value="1">Episode 1</option>
-            <option value="4" selected>Episode 4</option>
-            <option value="5">Episode 5</option>
-            <option value="6">Episode 6</option>
-            <option value="7">Episode 7</option>
-            <option value="characters">Characters</option>
-            <option value="places">Places</option>
-          </select>
 
-          <Button
-            disabled={disabled}
-            onClick={() => setCount(count - 1)}
-            class={tw`w-8  h-8 text(base gray-700 hover:gray-800) border(1 hover:yellow-400) rounded-l cursor-pointer focus:outline-none focus:ring-0 flex items-center justify-center`}
-          >
-            -
-          </Button>
-          <span
-            class={tw`w-auto px-4 text(base gray-800 hover:gray-800) bg-gray-200 border-1 h-8 outline-none flex items-center justify-center`}
-          >
-            {count}
-          </span>
-          <Button
-            onClick={() => setCount(count + 1)}
-            class={tw`w-8 text(base gray-700 hover:gray-800) hover:border-yellow-400 border-1 border-gray-200 h-8 rounded-r cursor-pointer focus:outline-none focus:ring-0  flex items-center justify-center`}
-          >
-            +
-          </Button>
+          <div class={tw`flex`}>
+            <select
+              onChange={() => setContent(event.target.value)}
+              class={tw` px-2 mr-2 text(base gray-700 hover:gray-800) hover:border-yellow-400 border-1 border-gray-200 h-8 rounded cursor-pointer focus:outline-none focus:ring-0 bg-gray-100`}
+            >
+              <option value="1">Episode 1</option>
+              <option value="4" selected>Episode 4</option>
+              <option value="5">Episode 5</option>
+              <option value="6">Episode 6</option>
+              <option value="7">Episode 7</option>
+              <option value="characters">Characters</option>
+              <option value="places">Places</option>
+            </select>
+
+            <Button
+              disabled={disabled}
+              onClick={() => setCount(count - 1)}
+              class={tw`w-8  h-8 text(base gray-700 hover:gray-800) border(1 hover:yellow-400) rounded-l cursor-pointer focus:outline-none focus:ring-0 flex items-center justify-center`}
+            >
+              -
+            </Button>
+            <span
+              class={tw`w-auto px-4 text(base gray-800 hover:gray-800) bg-gray-200 border-1 h-8 outline-none flex items-center justify-center`}
+            >
+              {count}
+            </span>
+            <Button
+              onClick={() => setCount(count + 1)}
+              class={tw`w-8 text(base gray-700 hover:gray-800) hover:border-yellow-400 border-1 border-gray-200 h-8 rounded-r cursor-pointer focus:outline-none focus:ring-0  flex items-center justify-center`}
+            >
+              +
+            </Button>
+          </div>
         </div>
       </div>
       <div class={tw``}>
