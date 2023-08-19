@@ -1,4 +1,3 @@
-/** @jsx h */
 export function handler(req: Request): Response {
     return new Response("", {
       status: 307,

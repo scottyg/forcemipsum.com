@@ -1,6 +1,6 @@
 
 import { HandlerContext, Handlers } from "$fresh/server.ts";
-import { forcem } from "https://deno.land/x/forcemipsum@0.1.0/mod.ts";
+import { forcem } from "https://deno.land/x/forcemipsum@0.3.0/mod.ts";
 
 export const handler: Handlers = {
   GET(_req: Request, _ctx: HandlerContext) {
