@@ -4,9 +4,6 @@
 /// <reference lib="dom.asynciterable" />
 /// <reference lib="deno.ns" />
 
-Deno.env.set("GA4_MEASUREMENT_ID", "397073677");
-Deno.env.set("PORT", "8000");
-
 import { start } from "$fresh/server.ts";
 import manifest from "./fresh.gen.ts";
 
