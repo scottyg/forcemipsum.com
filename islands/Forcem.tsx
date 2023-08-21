@@ -47,7 +47,8 @@ export default function Forcem(props: ForcemProps) {
 
           <div class="flex">
             <select
-              onChange={() => setContent(event.target.value)}
+              onChange={(event) =>
+                setContent((event.target as HTMLSelectElement).value)}
               class=" px-2 mr-2 text(base gray-900 hover:gray-800) hover:border-yellow-400 border-1 border-gray-200 h-8 rounded cursor-pointer focus:outline-none focus:ring-0 bg-gray-100"
             >
               <option value="1">Episode 1</option>

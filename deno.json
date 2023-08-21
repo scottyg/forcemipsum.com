@@ -2,7 +2,9 @@
   "tasks": {
     "start": "deno run -A --watch=static/,routes/ dev.ts",
     "build": "deno run -A dev.ts build",
-    "preview": "deno run -A main.ts"
+    "preview": "deno run -A main.ts",
+    "test": "deno test -A --parallel",
+    "check": "deno fmt --check && deno lint"
   },
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.4.2/",
