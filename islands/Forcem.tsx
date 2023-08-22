@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-import { forcem } from "https://deno.land/x/forcemipsum@0.3.0/mod.ts";
+import { forcem } from "https://deno.land/x/forcemipsum@3.0.0/mod.ts";
 
 import { Button } from "../components/Button.tsx";
 
@@ -42,26 +42,32 @@ export default function Forcem(props: ForcemProps) {
             href="/api"
             class="px-2 mr-2 text(base gray-900 dark:gray-300 hover:yellow-400) underline h-8 rounded cursor-pointer focus:outline-none focus:ring-0 flex items-center"
           >
-            Try the new API!
+            API
           </a>
 
           <div class="flex">
-            <select
-              onChange={(event) =>
-                setContent((event.target as HTMLSelectElement).value)}
-              class=" px-2 mr-2 text(base gray-900 hover:gray-800) hover:border-yellow-400 border-1 border-gray-200 h-8 rounded cursor-pointer focus:outline-none focus:ring-0 bg-gray-100"
-            >
-              <option value="1">Episode 1</option>
-              <option value="4" selected>Episode 4</option>
-              <option value="5">Episode 5</option>
-              <option value="6">Episode 6</option>
-              <option value="7">Episode 7</option>
-              <option value="8">Episode 8</option>
-              <option value="9">Episode 9</option>
-              <option value="characters">Characters</option>
-              <option value="places">Places</option>
-            </select>
-
+            <div>
+              <select
+                onChange={(event) =>
+                  setContent((event.target as HTMLSelectElement).value)}
+                class=" px-2 mr-2 text(base gray-900 hover:gray-800) hover:border-yellow-400 border-1 border-gray-200 h-8 rounded cursor-pointer focus:outline-none focus:ring-0 bg-gray-100"
+              >
+                <option value="1">Episode 1</option>
+                <option value="2">Episode 2</option>
+                <option value="3">Episode 3</option>
+                <option value="4" selected>Episode 4</option>
+                <option value="5">Episode 5</option>
+                <option value="6">Episode 6</option>
+                <option value="7">Episode 7</option>
+                <option value="8">Episode 8</option>
+                <option value="9">Episode 9</option>
+                <option value="characters">Characters</option>
+                <option value="places">Places</option>
+              </select>
+              <span class="block text-gray-900 dark:text-gray-300">
+                New Episodes!
+              </span>
+            </div>
             <Button
               disabled={disabled}
               onClick={() => setCount(count - 1)}

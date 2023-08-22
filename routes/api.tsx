@@ -34,7 +34,9 @@ export default function Api() {
         <h3 class="mb-2 mt-4 font-bold text-gray-900 dark:text-gray-300">
           Episodes
         </h3>
-        <p class="mb-2 text-gray-900 dark:text-gray-300">1, 4, 5, 6, 7, 8, 9</p>
+        <p class="mb-2 text-gray-900 dark:text-gray-300">
+          1, 2, 3, 4, 5, 6, 7, 8, 9
+        </p>
         <p class="mb-5">
           <span class="border-l-4 pl-4 py-2 block text-sm font-mono text-gray-500">
             https://forcemipsum.com/api/episode-4/5/
